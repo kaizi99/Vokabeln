@@ -33,8 +33,10 @@ public class FirstStart {
 		
 		do
 		{
-			
+			i++;
 		}
-		while()
+		while(new File(FILE_DIR + i + ".voc").exists());
+		
+		return i;
 	}
 }

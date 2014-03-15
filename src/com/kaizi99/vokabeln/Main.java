@@ -5,23 +5,17 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args){
+		
+		int AnzahlVokabeln = 0;
+		
 		try {
-			new FirstStart();
+			FirstStart fs = new FirstStart();
+			AnzahlVokabeln = fs.anzahlVokabeln();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
-		VokabelManager vocMan = new VokabelManager();
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
-		System.out.println(vocMan.getRandomVokabelID());
+		new Program(AnzahlVokabeln);
 	}
 
 }
