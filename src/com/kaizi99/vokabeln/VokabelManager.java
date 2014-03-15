@@ -44,9 +44,14 @@ public class VokabelManager {
 		return zufallszahl;
 	}
 	
-	public int getRandom()
+	public Vokabel getVokabel(int id)
 	{
-		int zufallszahl = (int) (Math.random() *vokabeln.length+0);
+		return vokabeln[id];
+	}
+	
+	private int getRandom()
+	{
+		int zufallszahl = (int) (Math.random() * vokabeln.length + 0);
 		
 		for(int i = 0; i < 10; i++)
 		{

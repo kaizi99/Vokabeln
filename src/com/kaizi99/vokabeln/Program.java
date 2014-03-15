@@ -6,5 +6,7 @@ public class Program {
 	{
 		VokabelManager vocMan = new VokabelManager(anzahlVokabeln);
 		
+		
+		
 	}
 }
