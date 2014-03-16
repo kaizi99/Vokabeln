@@ -2,10 +2,11 @@ package com.kaizi99.vokabeln;
 
 import java.io.File;
 import java.io.IOException;
+import com.kaizi99.utils.*;
 
 public class FirstStart {
 
-	private static final String FILE_DIR = System.getProperty("user.home") + "/Vokablen/";
+	private static final String FILE_DIR = Statics.FILE_DIR();
 	
 	File f;
 	

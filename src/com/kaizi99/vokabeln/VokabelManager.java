@@ -23,9 +23,19 @@ public class VokabelManager {
 		}
 	}
 	
-	public boolean checkVokabel(Vokabel voc,String english)
+	public boolean checkVokabel(int id,String english)
 	{
-		return vokabeln[voc.getID()].TestVoc(english);
+		return vokabeln[id].TestVoc(english);
+	}
+	
+	public String getDeutsch(int id)
+	{
+		return vokabeln[id].getDeutsch();
+	}
+	
+	public String getEnglish(int id)
+	{
+		return vokabeln[id].getEnglish();
 	}
 	
 	public int getRandomVokabelID()

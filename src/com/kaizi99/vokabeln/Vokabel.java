@@ -12,7 +12,7 @@ public class Vokabel {
 		
 		try
 		{
-			reader = new VokabelReader(new Integer(id).toString());
+			reader = new VokabelReader(id);
 		}
 		catch(Exception e)
 		{
@@ -22,8 +22,6 @@ public class Vokabel {
 		this.id = id;
 		english = reader.getEnglish();
 		deutsch = reader.getDeutsch();
-		
-		writeVokabel();
 	}
 		
 	public void writeVokabel()
